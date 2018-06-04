@@ -1,7 +1,7 @@
 
 This is a modification of CircleCI's node image.
 
-This docker image is available as aneilbaboo/node:6.10.3.
+This docker image is available as aneilbaboo/node:8.10.
 
 ```shell
 # build
