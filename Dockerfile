@@ -14,3 +14,8 @@ RUN curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest
 
 RUN npm install -g yarn
 
+RUN apt-get update
+
+RUN apt-get install default-jre
+
+RUN npm install -g yarn
