@@ -12,10 +12,12 @@ ENV PATH=~/.local/bin:${PATH}
 
 RUN curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ~/.local/bin/cc-test-reporter && chmod +x ~/.local/bin/cc-test-reporter
 
-RUN npm install -g yarn
-
 RUN apt-get update
 
 RUN apt-get install default-jre
 
-RUN npm install -g yarn
+RUN npm install -g npm@6.1.0
+
+RUN npm install -g yarn@1.7.0
+
+RUN npm set unsafe-perm true
